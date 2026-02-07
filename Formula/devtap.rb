@@ -5,21 +5,21 @@
 class Devtap < Formula
   desc "Bridge build/dev process output to AI coding sessions"
   homepage "https://github.com/killme2008/devtap"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/killme2008/devtap/releases/download/v0.1.4/devtap_darwin_amd64.tar.gz"
-      sha256 "501652306bf747983cdd449e9965eac911228f80acf5dcc25d864cfac69b9b6d"
+      url "https://github.com/killme2008/devtap/releases/download/v0.1.5/devtap_darwin_amd64.tar.gz"
+      sha256 "36ab0901080431d83cf947b94eacc65e48d1b33fdc8d95a94991994917cac905"
 
       def install
         bin.install "devtap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/killme2008/devtap/releases/download/v0.1.4/devtap_darwin_arm64.tar.gz"
-      sha256 "17b6a3d178ecca19295392ff3768f739d13e287439fbedb6a6a366cb9fa46fcb"
+      url "https://github.com/killme2008/devtap/releases/download/v0.1.5/devtap_darwin_arm64.tar.gz"
+      sha256 "57d3009a4a257a334fe0388d917a0157070a552205e65fdf6e80d76ca750563c"
 
       def install
         bin.install "devtap"
@@ -29,15 +29,15 @@ class Devtap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/killme2008/devtap/releases/download/v0.1.4/devtap_linux_amd64.tar.gz"
-      sha256 "e57e5afe626d913505fb9475274020c321e77182d98f5986be6cf8f02e704f94"
+      url "https://github.com/killme2008/devtap/releases/download/v0.1.5/devtap_linux_amd64.tar.gz"
+      sha256 "3709a8622080d6a1a27d6e6a5ed2757101858952c6e68493f9b28bef4503e81b"
       def install
         bin.install "devtap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/killme2008/devtap/releases/download/v0.1.4/devtap_linux_arm64.tar.gz"
-      sha256 "7d403f7e95f194906fee0376972d6cca39c0b37d916a4971a7b8d2834a64bc5c"
+      url "https://github.com/killme2008/devtap/releases/download/v0.1.5/devtap_linux_arm64.tar.gz"
+      sha256 "90384b9ab7d4797894a34c107f43b5aee4acf05f492bf45013d1c3d66f61931c"
       def install
         bin.install "devtap"
       end
